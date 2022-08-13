@@ -15,14 +15,14 @@ let g:colors_name='darcula'
 
 let s:p={
       \ 'null': ['NONE', 'NONE'],
-      \ 'bg': ['#2B2B2B', 235],
-      \ 'fg': ['#A9B7C6', 145],
-      \ 'cursor': ['#BBBBBB', 250],
+      \ 'bg': ['#282828', 235],
+      \ 'fg': ['#A7B5C4', 145],
+      \ 'cursor': ['#6a6a74', 250],
       \ 'identifierUnderCaret': ['#344134', 237],
       \ 'identifierUnderCaretWrite': ['#40332B', 58],
-      \ 'gutter': ['#313335', 236],
-      \ 'selection': ['#214283', 24],
-      \ 'cursorLine': ['#323232', 236],
+      \ 'gutter': ['#2a2a2a', 236],
+      \ 'selection': ['#214270', 24],
+      \ 'cursorLine': ['#2a2a2a', 236],
       \ 'cursorLineNr': ['#A4A3A3', 248],
       \ 'errorMsg': ['#CC666E', 174],
       \ 'error': ['#BC3F3C', 131],
@@ -155,7 +155,7 @@ endfunction
 call s:Hi('Normal', s:p.fg, s:p.bg)
 call s:Hi('ColorColumn', s:p.null, s:p.wrapGuide)
 call s:Hi('Conceal', s:p.muted, s:p.bg)
-call s:Hi('Cursor', s:p.cursor)
+call s:Hi('Cursor', s:p.ANSIWhite, s:p.cursor)
 hi! link lCursor Cursor
 hi! link CursorIM Cursor
 hi! link CursorColumn CursorLine
